@@ -11,18 +11,17 @@ $prod = $prodq->fetchAll(PDO::FETCH_ASSOC);
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title></title>
-    <link href="css/style.css" rel="stylesheet">
 </head>
 
 <body>
-    <a href="/zadanie/arrivals.php" id="arr">Arrivals</a>
+    <a href="/arrivals.php" id="arr">Arrivals</a>
     <table>
         <tr>
             <td>Name</td>
             <td>Cost</td>
             <td>Article</td>
-            <td><a href="/zadanie/create.php" id="create">Add new product</a></td>
-            <td><a href="/zadanie/postup.php" id="postup">Add arrive of product</a></td>
+            <td><a href="/create.php" id="create">Add new product</a></td>
+            <td><a href="/postup.php" id="postup">Add arrive of product</a></td>
         </tr>
         <? foreach ($prod as $pr): ?>
             <tr>

@@ -9,7 +9,7 @@ class FirstCest
 {
     public function _before(AcceptanceTester $I)
     {
-        $I->amOnPage('/zadanie/index.php');
+        $I->amOnPage('/index.php');
     }
 
     // tests

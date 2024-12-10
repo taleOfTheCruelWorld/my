@@ -9,7 +9,7 @@
 
 <body>
     <h1>Create a new row</h1><br>
-    <form action="/zadanie/actions/create.php" method="post">
+    <form action="/actions/create.php" method="post">
         <input type="text" placeholder="name" name="name" id="name">
         <input type="text" placeholder="how much" name="how_much" id="howmuch">
         <input type="submit" id="sub">

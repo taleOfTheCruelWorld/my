@@ -10,11 +10,10 @@ $prod= $prodq->fetchAll(PDO::FETCH_ASSOC);
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <title></title>
-        <link href="css/style.css" rel="stylesheet">
     </head>
     <body>
      <table>
-         <a href="/zadanie/index.php">Home</a>
+         <a href="/index.php">Home</a>
         <tr><td>Name</td><td>Amount</td><td>Date</td>></tr>
         <?foreach($prod as $pr):?>
            <tr>

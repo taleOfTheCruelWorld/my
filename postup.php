@@ -16,7 +16,7 @@ $products = $products->fetchAll(PDO::FETCH_ASSOC);
 
 <body>
     <h1>postuplenie tovara</h1>
-    <form action="/zadanie/actions/postup.php" method="post">
+    <form action="/actions/postup.php" method="post">
         <label for="date">date</label>
         <input type="text" name="date" placeholder="y-m-d    exemple: 2024-12-12" id="date"><br>
         <label for="prod">name of product</label><select name="product" id="prod">
@@ -24,7 +24,7 @@ $products = $products->fetchAll(PDO::FETCH_ASSOC);
                 <option value="<?= $prod['id'] ?>"><?= $prod['name'] ?></option>
             <? endforeach ?>
         </select><br>
-        <a href="/zadanie/create.php">create a new product</a>
+        <a href="/create.php">create a new product</a>
         <br>
         <label for="amount">amount of product</label>
         <input type="number" id="amount" name="amount">
