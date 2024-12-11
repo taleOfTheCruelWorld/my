@@ -1,5 +1,5 @@
 <?php
-$pdo = require $_SERVER['DOCUMENT_ROOT'] . '/zadanie/db.php';
+$pdo = require $_SERVER['DOCUMENT_ROOT'] . '/db.php';
 $prodq = $pdo->prepare('select uchet_tovarov.amount, uchet_tovarov.date, products.name as product_name  from uchet_tovarov left join products on uchet_tovarov.product_id = products.id ');
 $prodq->execute();
 $prod= $prodq->fetchAll(PDO::FETCH_ASSOC);

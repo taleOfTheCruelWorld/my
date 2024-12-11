@@ -1,5 +1,5 @@
 <?php
-$pdo = require $_SERVER['DOCUMENT_ROOT'] . '/zadanie/db.php';
+$pdo = require $_SERVER['DOCUMENT_ROOT'] . '/db.php';
 $prodq = $pdo->prepare('select * from products');
 $prodq->execute();
 $prod = $prodq->fetchAll(PDO::FETCH_ASSOC);
